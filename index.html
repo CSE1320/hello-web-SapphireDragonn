@@ -1,11 +1,3 @@
-<!-- COMPONENT:
-list -> a big div and two rows called list
-one component div called polaroid card
-    has smaller div called polaroid
-    smaller div called title
-
--->
-
 <!DOCTYPE html>
  <html>
     <head>
@@ -20,7 +12,7 @@ one component div called polaroid card
                 font-family: Nunito;
             }
 
-            .Collection{
+            .collection{
                 display: flex;
                 align-items: flex-start;
                 flex-flow: column nowrap;
@@ -30,7 +22,7 @@ one component div called polaroid card
                 height: 100%;
             }
 
-            .List{
+            .list{
                 display: flex;
                 align-items: flex-start;
                 flex-flow: row nowrap;
@@ -39,7 +31,7 @@ one component div called polaroid card
                 margin-bottom: 67px; 
             }
 
-            .Polaroid-Card{
+            .polaroid-card{
                 position: relative;
                 display: flex;
                 align-items: center;
@@ -47,7 +39,7 @@ one component div called polaroid card
                 align-content: center;
             }
 
-            .Polaroid{
+            .polaroid{
                 display: flex;
                 align-items: flex-start;
                 justify-content: center;
@@ -58,13 +50,26 @@ one component div called polaroid card
                 box-shadow: 0px 4px 10px rgb(194, 194, 194);
             }
 
-            .Image-Styling{
+            .warning{
+                position: relative;
+                bottom: 106px;
+                left: 6px;
+            }
+
+            .image-styling{
                 margin-top: 8px;
                 height: 103px;
                 width: 94px;
             }
 
-            .Title{
+            .image-styling-with-warning{
+                position: absolute;
+                margin-top: 8px;
+                height: 103px;
+                width: 94px;
+            }
+
+            .title{
                 position: absolute;
                 font-size: 16px;
                 font-weight: 600;
@@ -81,52 +86,67 @@ one component div called polaroid card
         </style>
     </head>
     <body>
-        <div class="Collection">
-            <div class="List">
-                <div class="Polaroid-Card">
-                    <div class="Polaroid">
-                        <img class="Image-Styling" src="imgs/death_cap.png" alt="An image of a death cap mushroom"></img>
+        <div class="collection">
+            <div class="list">
+                <div class="polaroid-card">
+                    <div class="polaroid">
+                        <div class="image-styling-with-warning">
+                            <img src="imgs/death_cap_old.png" alt="An image of a death cap mushroom"></img>
+                            <div class="warning">
+                                <img src="imgs/warning.png" alt="An triangular symbol with a white exclamation point inside signifying warning or danger."></img>
+                            </div>
+                        </div>
                     </div>
         
-                    <h1 class="Title">Death Cap</h1>
+                    <h1 class="title">Death Cap</h1>
         
                 </div>
 
-                <div class="Polaroid-Card">
-                    <div class="Polaroid">
-                        <img class="Image-Styling" src="imgs/paddy_straw.png" alt="An image of a paddy straw mushroom"></img>
+                <div class="polaroid-card">
+                    <div class="polaroid">
+                        <img class="image-styling" src="imgs/paddy_straw.png" alt="An image of a paddy straw mushroom"></img>
                     </div>
         
-                    <h1 class="Title">Paddy Straw</h1>
+                    <h1 class="title">Paddy Straw</h1>
         
                 </div>
 
-                <div class="Polaroid-Card">
-                    <div class="Polaroid">
-                        <img class="Image-Styling" src="imgs/destroying_angel.png" alt="An image of a destroying angel mushroom"></img>
+                <div class="polaroid-card">
+                    <div class="polaroid">
+                        <div class="image-styling-with-warning">
+                            <img src="imgs/destroying_angel_old.png" alt="An image of a destroying angel mushroom"></img>
+                            <div class="warning">
+                                <img src="imgs/warning.png" alt="An triangular symbol with a white exclamation point inside signifying warning or danger."></img>
+                            </div>
+                        </div>
                     </div>
         
-                    <h1 class="Title">Destroying Angel</h1>
+                    <h1 class="title">Destroying Angel</h1>
         
                 </div>
 
             </div>
-            <div class="List">
-                <div class="Polaroid-Card">
-                    <div class="Polaroid">
-                        <img class="Image-Styling" src="imgs/false_death_cap.png" alt="An image of a false death cap mushroom"></img>
+            <div class="list">
+                <div class="polaroid-card">
+                    <div class="polaroid">
+                        <div class="image-styling-with-warning">
+                            <img src="imgs/false_death_cap_old.png" alt="An image of a false death cap mushroom"></img>
+                            <div class="warning">
+                                <img src="imgs/warning.png" alt="An triangular symbol with a white exclamation point inside signifying warning or danger."></img>
+                            </div>
+                        </div>
                     </div>
         
-                    <h1 class="Title">False Death Cap</h1>
+                    <h1 class="title">False Death Cap</h1>
         
                 </div>
 
-                <div class="Polaroid-Card">
-                    <div class="Polaroid">
-                        <img class="Image-Styling" src="imgs/puffball.png" alt="An image of a puffball mushroom"></img>
+                <div class="polaroid-card">
+                    <div class="polaroid">
+                        <img class="image-styling" src="imgs/puffball.png" alt="An image of a puffball mushroom"></img>
                     </div>
         
-                    <h1 class="Title">Puffball</h1>
+                    <h1 class="title">Puffball</h1>
         
                 </div>
             </div>
@@ -135,5 +155,3 @@ one component div called polaroid card
     </body>
 
  </html>
-    
-        
